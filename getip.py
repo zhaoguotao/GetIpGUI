@@ -7,7 +7,7 @@ from datetime import datetime
 root = Tk()
 root.resizable(height=False,width=False)
 root.title(string=u'Info')
-root.attributes("-toolwindow", 1)#工具栏样式
+# root.attributes("-toolwindow", 1)#工具栏样式，该属性只在windows系统生效，linux系统会报错，默认注释
 root.attributes("-topmost", 1)#置顶
 root.attributes("-alpha",1)#透明度
 def RefreshIP():
