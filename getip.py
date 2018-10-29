@@ -7,11 +7,11 @@ from datetime import datetime
 root = Tk()
 root.resizable(height=False,width=False)
 root.title(string=u'Info')
-# root.attributes("-toolwindow", 1)#工具栏样式，该属性只在windows系统生效，linux系统会报错，默认注释
-root.attributes("-topmost", 1)#置顶
-root.attributes("-alpha",1)#透明度
+# root.attributes("-toolwindow", 1)#Toolbar style，this Property is only for windows，linux can not use
+root.attributes("-topmost", 1)#top
+root.attributes("-alpha",1)#transparency
 def RefreshIP():
-	localIP = socket.gethostbyname(socket.gethostname())#得到本地ip
+	localIP = socket.gethostbyname(socket.gethostname())#Get local ip
 # 	print(socket.gethostname())
 	#get pc's hostname and ip lists
 	ipList = socket.gethostbyname_ex(socket.gethostname())
