@@ -7,7 +7,6 @@ from datetime import datetime
 root = Tk()
 root.resizable(height=False,width=False)
 root.title(string=u'Info')
-# root.attributes("-toolwindow", 1)#Toolbar style，this Property is only for windows，linux can not use
 root.attributes("-topmost", 1)#top
 root.attributes("-alpha",1)#transparency
 def RefreshIP():
